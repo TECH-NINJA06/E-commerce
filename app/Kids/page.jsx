@@ -1,8 +1,14 @@
+"use client"
 import React from 'react'
+import ShopCategory from '../ShopCategory/ShopCategory'
 
 const kids = () => {
+  const category="kid"
   return (
-    <div>kids</div>
+    <div>
+    <img src="/Assets/banner_kids.png" alt="" />
+    <ShopCategory  category={category}/>
+  </div>
   )
 }
 
