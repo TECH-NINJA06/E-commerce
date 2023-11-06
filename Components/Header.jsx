@@ -17,7 +17,7 @@ const Header = () => {
         </ul> 
         <div id="logincart" className='flex items-center gap-10'>
             <Link href="/LogIn"><button className='w-32 h-14 outline-none border-gray-300 border  rounded-full text-lg cursor-pointer text-black'>Login</button></Link>
-            <Link href="/Cart"><img src="/Assets/cart_icon.png" alt="" /></Link>
+            <Link href="/cart"><img src="/Assets/cart_icon.png" alt="" /></Link>
             <div id="cartcount" className='w-4 h-4 bg-red-500 flex justify-center items-center -mt-8 -ml-11 rounded-full text-sm text-white'>0</div>
         </div>
     </nav>

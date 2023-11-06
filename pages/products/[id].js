@@ -4,7 +4,6 @@ import Header from '@/Components/Header';
 import Footer from '@/Components/Footer';
 import 'tailwindcss/tailwind.css';
 import all_product from '@/public/Assets/all_product';
-//    <h1>{query.Productid}</h1>
 
 
 
@@ -56,7 +55,7 @@ function ProductPage({ product }) {
   };
   const num = Math.floor(Math.random()*100)
   const nums= num.toString();
-  // Render the product information
+ 
   return (
     <>
     <Header/>
@@ -85,7 +84,7 @@ function ProductPage({ product }) {
         <div className={`hover:bg-gray-300 ${divColord} flex items-center justify-center rounded-xl w-10 cursor-pointer`} onClick={handleDivClickd}>XL</div>
         <div className={`hover:bg-gray-300 ${divColore} flex items-center justify-center rounded-xl w-10 cursor-pointer`} onClick={handleDivClicke}>XXL</div></div>
       </div>
-      <button className='bg-gray-300 p-3 rounded-xl mt-10'>ADD TO CART</button></div>
+      <button onClick={addToCart} className='bg-gray-300 p-3 rounded-xl mt-10'>ADD TO CART</button></div>
       
     </div>
     <Footer/>
