@@ -84,7 +84,7 @@ function ProductPage({ product }) {
         <div className={`hover:bg-gray-300 ${divColord} flex items-center justify-center rounded-xl w-10 cursor-pointer`} onClick={handleDivClickd}>XL</div>
         <div className={`hover:bg-gray-300 ${divColore} flex items-center justify-center rounded-xl w-10 cursor-pointer`} onClick={handleDivClicke}>XXL</div></div>
       </div>
-      <button onClick={addToCart} className='bg-gray-300 p-3 rounded-xl mt-10'>ADD TO CART</button></div>
+      <button className='bg-gray-300 p-3 rounded-xl mt-10'>ADD TO CART</button></div>
       
     </div>
     <Footer/>
