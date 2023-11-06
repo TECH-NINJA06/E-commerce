@@ -1,5 +1,6 @@
 import Footer from '@/Components/Footer'
 import './globals.css'
+import 'tailwindcss/tailwind.css';
 import Header from '@/Components/Header'
 export const metadata = {
   title: 'Utopia Store',
