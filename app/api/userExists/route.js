@@ -10,6 +10,6 @@ export async function POST(req) {
 
         return NextResponse.json({user});
     } catch (error) {
-        console.error(error);
+        console.log('error from user exists' + error.message);
     }
 }
