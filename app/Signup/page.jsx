@@ -22,10 +22,10 @@ const signup = () => {
 
     try {
       const resExists = await fetch('api/userExists', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json',},
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json',},
         body: JSON.stringify({
-          email,
+          email
         }),
       });
 
@@ -46,15 +46,14 @@ const signup = () => {
       });
 
       if (res.ok) {
-        const form = e.target;
-        form.reset();
+      //  const form = e.target;
         router.push('/Shop');
 
       }else {
         console.log("user registration failed");
       }
     } catch (error) {
-      
+      console.log('hello');
     }
   }
 

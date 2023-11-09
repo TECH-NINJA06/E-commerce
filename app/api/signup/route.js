@@ -1,7 +1,7 @@
 import User from "@/models/userSchema";
 import { connect } from "@/lib/dbConfig";
 import { NextResponse } from "next/server";
-import bcrypt from "bcrypt";
+import bcryptjs from "bcryptjs";
 
 export async function POST(req) {
     try {
@@ -9,7 +9,7 @@ export async function POST(req) {
         console.log(name, email, password);
 
 // hash password
-        const hashedPassword = await bcrypt.hash(password, 10);
+        const hashedPassword = await bcryptjs.hash(password, 10);
 
         await connect();
         await User.create(name, email, hashedPassword);
